@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.navbar .container .logo span{
+    color: #5c5b5b;
+    font-size: 14px;
+}
+.backG{
+    
+
+}
+.all-content{
+    background-image: url(../images/grassy-field-with-leafless-trees-distance-cloudy-sky-background.jpg);
+    height: calc((100vh - 77px));
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.all-content .EnterCity input, .contact input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    caret-color: #0dcaf0;
+}
+.cards .box,.boxOne{
+    width: calc(100% / 3);
+}
+@media (max-width:550px) {
+    .cards .box,.boxOne{
+        width:100%;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .all-content{
+        overflow-y: scroll;
+    }
+}
+.error{
+    display: none;
+}
+.cards .footer-card{
+    height:100%;
+}
+.cards .box:nth-child(2) .header-card{
+    background-color: #000000d7;
+    
+}
+.cards .box:nth-child(2) .footer-card{
+    background-color: #000000dc;
+    
+}
+.cards .box .header-card,.boxOne .header-card {
+    background-color: #000000cc;
+}
+.cards .box .footer-card,.cards .boxOne .footer-card{
+    background-color: #000000b9;
+}
+.cards .boxOne .footer-card .cityName{
+    font-size:30px;
+    color: #a8abad;
+}
+.cards .box .footer-card .temp strong, .boxOne .footer-card .temp strong {
+    font-size: 50px;
+    
+}
+.cards .box .footer-card .temp i , .boxOne .footer-card .temp i{
+    font-size: 30px;
+}
+
+.min-temp{
+    color:#a8abad ;
+}
+
+.footer a{
+    padding: 15px;
+    background-color: #5c5b5b;
+    border-radius: 50%;
+    transition: .5s;
+    color: white;
+}
+.footer a:hover{
+    background-color: #0dcaf0;
+}
